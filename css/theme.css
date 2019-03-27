@@ -1,0 +1,145 @@
+:root {
+  --color-primary: #cc401c;
+  --color-primary-dark: #8f2d15;
+  --color-grey-medium: #999;
+  --color-grey-dark: #444;
+  --font-primary: "Alegreya Sans", sans-serif;
+  --font-secondary: "Bree Serif", serif;
+
+  --transition: .25s ease-in-out;
+}
+
+html {
+  font-family: var(--font-primary);
+}
+
+h1, h2, h3, .font-alt {
+  font-family: var(--font-secondary);
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  border-bottom: 1px solid var(--color-grey-medium);
+}
+
+/* ---------- Colors ---------- */
+
+a {
+  color: var(--color-primary);
+  transition:
+    color var(--transition),
+    background-color var(--transition),
+    border-color var(--transition);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+.text-fff {
+  color: #fff;
+}
+
+.text-mg {
+  color: var(--color-grey-medium);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-dg {
+  background-color: var(--color-grey-dark);
+}
+
+/* ---------- Notes Page ---------- */
+
+.li-push-r li {
+  margin-right: 1.3rem;
+}
+
+.li-push-r li:last-child {
+  margin-right: 0;
+}
+
+.li-push-r-1-2 li {
+  margin-right: .6rem;
+}
+
+.li-push-r-1-2 li:last-child {
+  margin-right: 0;
+}
+
+.level-1,
+.level-2 {
+  padding-left: 1.3rem;
+  list-style-type: disc;
+}
+
+.level-2 {
+  /* padding-left: 2.6rem; */
+  list-style-type: circle;
+}
+
+@media only screen and (min-width: 38em) {
+
+
+  .li-push-r li {
+    margin-right: 1.4rem;
+  }
+
+  .li-push-r li:last-child {
+    margin-right: 0;
+  }
+
+  .li-push-r-1-2 li {
+    margin-right: .7rem;
+  }
+
+  .li-push-r-1-2 li:last-child {
+    margin-right: 0;
+  }
+
+  .level-1,
+  .level-2 {
+    padding-left: 1.4rem;
+  }
+
+  .level-2 {
+    /* padding-left: 2.8rem; */
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+
+  .li-push-r li {
+    margin-right: 1.5rem;
+  }
+
+  .li-push-r li:last-child {
+    margin-right: 0;
+  }
+
+  .li-push-r-1-2 li {
+    margin-right: .75rem;
+  }
+
+  .li-push-r-1-2 li:last-child {
+    margin-right: 0;
+  }
+
+  .level-1,
+  .level-2 {
+    padding-left: 1.5rem;
+  }
+
+  .level-2 {
+    /* padding-left: 3rem; */
+  }
+
+}

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% for drafts in site.posts limit:1 %}
+  <section id="{{drafts.draft-id}}" class="pad-t-2 pad-b-2" tabindex="0">
+    <div class="max-length gutter">
+      {{drafts.content}}
+    </div>
+  </section>
+{% endfor %}

@@ -1,0 +1,71 @@
+---
+layout: default
+title: Notes
+---
+<div class="max-length pad-t-2 pad-b-2 gutter">
+  <ol class="push-2 font-alt list-group-inline li-push-r giga">
+    <li>
+      <a href="#outline">Outline</a>
+    </li>
+    {% for drafts in site.posts %}
+      <li>
+        <a href="#{{drafts.draft-id}}">{{drafts.title}}</a>
+      </li>
+    {% endfor %}
+  </ol>
+  <section id="outline push-2" tabindex="0">
+    <h2>Outline</h2>
+    <ol class="list-group level-1">
+      <li>
+        <h3>Introduction</h3>
+        <p>I am excited to talk about what a passionate and dedicated professor Thomas is, and the incredible impact that he has had on my education over the past three years.</p>
+        <ol class="list-group level-2">
+          <li>Dedicated to his students</li>
+          <li>Instills his passion into his students</li>
+          <li>Impact on my education and love of code</li>
+        </ol>
+        <p>Thomas has a very difficult job. He is tasked with teaching a group of artsy designers the more logic oriented subject of web development. It is fair to say, it is not a subject that a lot of us come to naturally. But through Thomas' positivity, encouragement, dedication, and excellent use of dinosaurs, he has created a course and an environment that has allowed us to learn and be succesful.</p>
+      </li>
+      <li>
+        <h3>Dedicated</h3>
+        <p>Thomas is incredibly dedicated to his students and their success. He has created fantastic tools to help us learn and is constantly improving and expanding the available resources to help us constantly grow and improve.</p>
+        <ol class="list-group level-2">
+          <li>Learn the Web</li>
+          <li>Markbot, Spritebot, Patternbot</li>
+          <li>GitHub issues, goes to extra lengths to help students understand the topics and provide extra learning materials</li>
+          <li>Finds ways to challenge and improve students of different skill levels</li>
+        </ol>
+      </li>
+      <li>
+        <h3>Passionate</h3>
+        <p>Thomas is incredibly passionate about teaching Web Development and helping his students succeed.</p>
+        <ol class="list-group level-2">
+          <li>It genuinely feels like he is excited about teaching code and seeing your progress.</li>
+          <li>Adds personal touches and extra levels to the lessons and shares other interests to make them fun and interesting.</li>
+          <li>Matches his belt buckles to his lessons</li>
+        </ol>
+      </li>
+      <li>
+        <h3>Impact on my education</h3>
+        <ol class="list-group level-2">
+          <li>Challenges me to be better</li>
+          <li>Makes me feel like my ideas and contributions have value</li>
+          <li>Encourages and supports my own ideas and learning</li>
+          <li>Thomas is my role model</li>
+        </ol>
+      </li>
+      <li>
+        <h3>Conclusion</h3>
+        <ol class="list-group level-2">
+          <li></li>
+        </ol>
+      </li>
+    </ol>
+  </section>
+  {% for drafts in site.posts %}
+    <section id="{{drafts.draft-id}}" tabindex="0">
+      <h2>{{drafts.title}}</h2>
+      {{drafts.content}}
+    </section>
+  {% endfor %}
+</div>

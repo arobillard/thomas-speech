@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{page.title}} · {% endif %}Thank you speech for Thomas J Bradley</title>
+  <meta name="handheldfriendly" content="true">
+  <meta name="mobileoptimized" content="240">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="{{site.baseurl/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700|Bree+Serif" rel="stylesheet">
+</head>
+<body>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a class="skip-to-nav" href="#nav">Jump to navigation</a></li>
+  </ul>
+  {% include header.html %}
+  <main id="main" role="main">
+    {{content}}
+  </main>
+
+  {% include footer.html %}
+
+</body>
+</html>
