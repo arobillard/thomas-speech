@@ -143,3 +143,12 @@ a:hover {
   }
 
 }
+
+@media print {
+
+  body {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+}

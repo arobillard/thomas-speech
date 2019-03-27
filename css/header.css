@@ -21,3 +21,12 @@
   }
 
 }
+
+
+@media print {
+
+  .masthead {
+    min-height: auto;
+  }
+
+}
