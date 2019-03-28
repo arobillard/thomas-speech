@@ -39,6 +39,14 @@ a:hover {
   color: var(--color-primary-dark);
 }
 
+.footer a {
+  color: var(--color-grey-medium);
+}
+
+.footer a:hover {
+  color: var(--color-primary);
+}
+
 .text-fff {
   color: #fff;
 }
